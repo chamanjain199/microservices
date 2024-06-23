@@ -1,0 +1,193 @@
+2024-05-19 20:50:01,292 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 13876 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-05-19 20:50:01,294 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-19 20:50:01,337 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19 20:50:01,337 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19 20:50:01,918 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 20:50:01,962 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2024-05-19 20:50:02,330 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-19 20:50:02,340 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-19 20:50:02,342 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-19 20:50:02,342 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-19 20:50:02,387 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-19 20:50:02,387 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1049 ms
+2024-05-19 20:50:02,414 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-19 20:50:02,544 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77082e4e
+2024-05-19 20:50:02,546 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-19 20:50:02,559 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_rate'
+2024-05-19 20:50:02,665 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 20:50:02,720 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 20:50:02,752 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-19 20:50:02,926 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 20:50:02,971 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 20:50:03,584 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 20:50:03,598 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-05-19 20:50:03,599 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "movie_comment" does not exist, skipping
+2024-05-19 20:50:03,599 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-05-19 20:50:03,599 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] table "movie_rating" does not exist, skipping
+2024-05-19 20:50:03,600 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-05-19 20:50:03,600 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] sequence "movie_comment_seq" does not exist, skipping
+2024-05-19 20:50:03,601 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2024-05-19 20:50:03,601 WARN o.h.e.j.s.SqlExceptionHelper$StandardWarningHandler [restartedMain] sequence "movie_rating_seq" does not exist, skipping
+2024-05-19 20:50:03,634 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 20:50:03,875 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 20:50:04,207 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-19 20:50:04,226 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-19 20:50:04,243 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-19 20:50:04,251 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 3.347 seconds (process running for 3.967)
+2024-05-19 20:52:09,788 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-19 20:52:09,798 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2024-05-19 20:52:09,808 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 20:52:09,811 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2024-05-19 20:52:09,816 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2024-05-19 20:52:09,890 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 13876 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-05-19 20:52:09,890 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-19 20:52:10,026 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 20:52:10,034 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2024-05-19 20:52:10,092 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-19 20:52:10,093 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-19 20:52:10,093 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-19 20:52:10,093 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-19 20:52:10,111 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-19 20:52:10,111 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 219 ms
+2024-05-19 20:52:10,122 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-05-19 20:52:10,161 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4f3df971
+2024-05-19 20:52:10,161 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-05-19 20:52:10,162 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_rate'
+2024-05-19 20:52:10,181 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 20:52:10,183 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-19 20:52:10,187 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 20:52:10,194 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 20:52:10,232 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 20:52:10,255 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 20:52:10,326 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 20:52:10,425 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-19 20:52:10,433 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-19 20:52:10,439 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-19 20:52:10,442 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.572 seconds (process running for 130.158)
+2024-05-19 20:52:10,445 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-19 20:52:12,082 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(13)-127.0.0.1] Application shutdown requested.
+2024-05-19 20:52:12,086 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(13)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-05-19 20:52:12,092 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(13)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 20:52:12,093 INFO c.z.h.HikariDataSource [RMI TCP Connection(13)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2024-05-19 20:52:12,096 INFO c.z.h.HikariDataSource [RMI TCP Connection(13)-127.0.0.1] HikariPool-2 - Shutdown completed.
+2024-05-19 21:01:48,894 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7536 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-05-19 21:01:48,897 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-19 21:01:48,941 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19 21:01:48,942 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19 21:01:49,542 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 21:01:49,583 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2024-05-19 21:01:49,941 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-19 21:01:49,951 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:01:49,953 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-19 21:01:49,953 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-19 21:01:49,993 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-19 21:01:49,993 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1050 ms
+2024-05-19 21:01:50,021 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-19 21:01:50,173 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b1b3ec5
+2024-05-19 21:01:50,175 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-19 21:01:50,183 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_rate'
+2024-05-19 21:01:50,294 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 21:01:50,337 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 21:01:50,364 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-19 21:01:50,536 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 21:01:50,585 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 21:01:51,196 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 21:01:51,199 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 21:01:51,457 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 21:01:51,785 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-19 21:01:51,806 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:01:51,820 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-19 21:01:51,829 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 3.342 seconds (process running for 3.918)
+2024-05-19 21:02:55,508 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 21 class path changes (0 additions, 0 deletions, 21 modifications)
+2024-05-19 21:02:55,513 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:02:55,523 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 21:02:55,527 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2024-05-19 21:02:55,532 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2024-05-19 21:02:55,611 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7536 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-05-19 21:02:55,611 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-19 21:02:55,746 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 21:02:55,758 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2024-05-19 21:02:55,824 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-19 21:02:55,824 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:02:55,825 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-19 21:02:55,825 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-19 21:02:55,839 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-19 21:02:55,839 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 225 ms
+2024-05-19 21:02:55,851 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-05-19 21:02:55,894 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@178bbde
+2024-05-19 21:02:55,895 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-05-19 21:02:55,895 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_rate'
+2024-05-19 21:02:55,913 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 21:02:55,916 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-19 21:02:55,919 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 21:02:55,927 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 21:02:55,963 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 21:02:55,963 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 21:02:56,036 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 21:02:56,121 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-19 21:02:56,129 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:02:56,132 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-19 21:02:56,137 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.546 seconds (process running for 68.227)
+2024-05-19 21:02:56,141 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-19 21:02:57,911 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(9)-127.0.0.1] Application shutdown requested.
+2024-05-19 21:02:57,913 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:02:57,920 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(9)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 21:02:57,922 INFO c.z.h.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2024-05-19 21:02:57,926 INFO c.z.h.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-2 - Shutdown completed.
+2024-05-19 21:02:59,824 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 9252 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-05-19 21:02:59,828 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-19 21:02:59,876 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19 21:02:59,876 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19 21:03:00,552 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 21:03:00,597 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-05-19 21:03:01,005 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-19 21:03:01,013 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:03:01,014 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-19 21:03:01,015 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-19 21:03:01,053 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-19 21:03:01,053 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1176 ms
+2024-05-19 21:03:01,083 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-19 21:03:01,227 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61eaefc7
+2024-05-19 21:03:01,229 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-19 21:03:01,239 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_rate'
+2024-05-19 21:03:01,444 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-19 21:03:01,811 INFO l.l.c.JavaLogger [restartedMain] Creating database history table with name: public.databasechangelog
+2024-05-19 21:03:01,858 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-19 21:03:01,933 INFO l.l.c.JavaLogger [restartedMain] Successfully acquired change log lock
+2024-05-19 21:03:01,934 INFO l.l.c.JavaLogger [restartedMain] Using deploymentId: 6132781934
+2024-05-19 21:03:01,936 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-19 21:03:01,962 INFO l.l.c.JavaLogger [restartedMain] Sequence movie_comment_seq created
+2024-05-19 21:03:01,965 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-1::chama (generated) ran successfully in 5ms
+2024-05-19 21:03:01,974 INFO l.l.c.JavaLogger [restartedMain] Sequence movie_rating_seq created
+2024-05-19 21:03:01,975 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-2::chama (generated) ran successfully in 4ms
+2024-05-19 21:03:01,994 INFO l.l.c.JavaLogger [restartedMain] Table movie_comment created
+2024-05-19 21:03:01,995 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-3::chama (generated) ran successfully in 13ms
+2024-05-19 21:03:02,007 INFO l.l.c.JavaLogger [restartedMain] Table movie_rating created
+2024-05-19 21:03:02,008 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-4::chama (generated) ran successfully in 7ms
+2024-05-19 21:03:02,013 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-19 21:03:02,013 INFO l.l.c.JavaLogger [restartedMain] Run:                          4
+2024-05-19 21:03:02,013 INFO l.l.c.JavaLogger [restartedMain] Previously run:               0
+2024-05-19 21:03:02,014 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-19 21:03:02,014 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-19 21:03:02,014 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            4
+2024-05-19 21:03:02,014 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-19 21:03:02,017 INFO l.l.c.JavaLogger [restartedMain] Update command completed successfully.
+2024-05-19 21:03:02,020 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-19 21:03:02,020 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-19 21:03:02,089 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 21:03:02,126 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 21:03:02,159 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-19 21:03:02,346 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 21:03:02,386 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 21:03:02,970 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 21:03:02,973 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 21:03:03,239 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 21:03:03,571 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-19 21:03:03,595 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:03:03,613 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-19 21:03:03,624 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 4.21 seconds (process running for 4.817)
+2024-05-19 21:03:16,036 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2024-05-19 21:03:16,041 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-05-19 21:03:16,050 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 21:03:16,054 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-05-19 21:03:16,058 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.

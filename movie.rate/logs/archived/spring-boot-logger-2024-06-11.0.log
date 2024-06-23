@@ -1,0 +1,619 @@
+2024-06-11 22:43:33,588 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-11 22:43:33,715 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.3 with PID 9832 (D:\study\impetus certificate\project\movie.rate\target\classes started by chaman.jain in D:\study\impetus certificate\project\movie.rate)
+2024-06-11 22:43:33,718 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2024-06-11 22:43:33,876 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 22:43:33,878 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 22:43:39,935 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-11 22:43:40,502 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 542 ms. Found 2 JPA repository interfaces.
+2024-06-11 22:43:42,326 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=bf66f6dd-7653-3371-aae7-b5f3cdd0c276
+2024-06-11 22:43:43,885 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-11 22:43:43,903 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-11 22:43:46,175 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8082 (http)
+2024-06-11 22:43:46,203 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-11 22:43:46,207 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-11 22:43:46,208 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-11 22:43:46,531 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-11 22:43:46,532 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 12652 ms
+2024-06-11 22:43:48,666 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-06-11 22:43:49,287 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9cfe6c84-596d-423f-b2c8-a6dac048b9a2 user=SA
+2024-06-11 22:43:49,293 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-06-11 22:43:49,342 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9cfe6c84-596d-423f-b2c8-a6dac048b9a2'
+2024-06-11 22:43:50,401 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to PUBLIC
+2024-06-11 22:43:51,889 INFO l.l.c.JavaLogger [restartedMain] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-11 22:43:52,224 INFO l.l.c.JavaLogger [restartedMain] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-11 22:43:52,533 INFO l.l.c.JavaLogger [restartedMain] Successfully acquired change log lock
+2024-06-11 22:43:52,535 INFO l.l.c.JavaLogger [restartedMain] Using deploymentId: 8126032535
+2024-06-11 22:43:52,539 INFO l.l.c.JavaLogger [restartedMain] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-11 22:43:52,643 INFO l.l.c.JavaLogger [restartedMain] Sequence movie_comment_seq created
+2024-06-11 22:43:52,646 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-1::chama (generated) ran successfully in 12ms
+2024-06-11 22:43:52,695 INFO l.l.c.JavaLogger [restartedMain] Sequence movie_rating_seq created
+2024-06-11 22:43:52,697 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-2::chama (generated) ran successfully in 10ms
+2024-06-11 22:43:52,726 INFO l.l.c.JavaLogger [restartedMain] Table movie_comment created
+2024-06-11 22:43:52,727 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-3::chama (generated) ran successfully in 7ms
+2024-06-11 22:43:52,744 INFO l.l.c.JavaLogger [restartedMain] Table movie_rating created
+2024-06-11 22:43:52,745 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-4::chama (generated) ran successfully in 7ms
+2024-06-11 22:43:52,776 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-06-11 22:43:52,776 INFO l.l.c.JavaLogger [restartedMain] Run:                          4
+2024-06-11 22:43:52,777 INFO l.l.c.JavaLogger [restartedMain] Previously run:               0
+2024-06-11 22:43:52,777 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-06-11 22:43:52,778 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-06-11 22:43:52,778 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            4
+2024-06-11 22:43:52,779 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-06-11 22:43:52,785 INFO l.l.c.JavaLogger [restartedMain] Update command completed successfully.
+2024-06-11 22:43:52,791 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-06-11 22:43:52,792 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-06-11 22:43:53,266 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-11 22:43:53,439 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-11 22:43:53,558 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-06-11 22:43:54,273 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-11 22:43:57,240 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-11 22:43:57,249 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-11 22:43:59,616 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-11 22:44:00,269 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-06-11 22:44:00,722 INFO o.s.c.o.FeignClientFactoryBean [restartedMain] For 'MOVIEREPOSITORY' URL not provided. Will try picking an instance via load-balancing.
+2024-06-11 22:44:01,296 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-11 22:44:03,725 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: dd6f2755-43c1-4197-b974-8bddfeaf9873
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-11 22:44:07,886 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 26 endpoint(s) beneath base path '/actuator'
+2024-06-11 22:44:08,329 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@300f93ff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36c7a24d, org.springframework.security.web.context.SecurityContextHolderFilter@6ab11385, org.springframework.security.web.header.HeaderWriterFilter@453f0bbb, org.springframework.web.filter.CorsFilter@7925e85f, org.springframework.security.web.authentication.logout.LogoutFilter@7afbbc4c, com.example.movie.rate.filter.JwtAuthenticationFilter@15065aa5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b5f38a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dc839d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59daa391, org.springframework.security.web.access.ExceptionTranslationFilter@66ee5a4e, org.springframework.security.web.access.intercept.AuthorizationFilter@3baa40d8]
+2024-06-11 22:44:14,178 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2024-06-11 22:44:14,982 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-11 22:44:15,764 INFO o.a.k.c.c.AbstractConfig [restartedMain] AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-11 22:44:16,145 INFO o.a.k.c.u.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.6.2
+2024-06-11 22:44:16,146 INFO o.a.k.c.u.AppInfoParser$AppInfo [restartedMain] Kafka commitId: c4deed513057c94e
+2024-06-11 22:44:16,146 INFO o.a.k.c.u.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1718126056137
+2024-06-11 22:44:16,235 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:16,244 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:16,367 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:16,368 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:16,490 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:16,492 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:16,729 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:16,730 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:17,212 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:17,213 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:18,136 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:18,139 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:19,152 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:19,152 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:20,322 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:20,323 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:21,318 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:21,318 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:22,269 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:22,270 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:23,248 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:23,249 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:24,359 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:24,360 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:25,447 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:25,448 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:26,709 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:26,709 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:27,797 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:27,797 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:29,002 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:29,003 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:29,995 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:29,996 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:31,196 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:31,196 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:32,374 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:32,374 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:33,549 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:33,550 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:34,423 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:34,424 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:35,291 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:35,291 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:36,487 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:36,487 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:37,571 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:37,571 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:38,763 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:38,763 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:39,637 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:39,638 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:40,728 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:40,729 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:41,657 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:41,658 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:42,750 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:42,751 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:43,728 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:43,728 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:44,708 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:44,708 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:45,534 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:45,535 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:46,179 INFO o.a.k.c.a.i.AdminMetadataManager [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+2024-06-11 22:44:46,180 ERROR o.s.c.l.LogAccessor [restartedMain] Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$11(KafkaAdmin.java:520)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:499)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:392)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:258)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:986)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.movie.rate.Application.main(Application.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$11(KafkaAdmin.java:502)
+	... 18 common frames omitted
+2024-06-11 22:44:46,401 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:46,402 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:47,381 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:47,381 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:48,359 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:48,360 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:49,286 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:49,287 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:50,269 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:50,270 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:51,360 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:51,361 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:52,232 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:52,233 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:53,321 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:53,322 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:54,191 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:54,191 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:55,170 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-06-11 22:44:55,170 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-06-11 22:44:56,196 INFO o.a.k.c.a.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2024-06-11 22:44:56,197 INFO o.a.k.c.u.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2024-06-11 22:44:56,200 INFO o.a.k.c.a.i.AdminMetadataManager [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+2024-06-11 22:44:56,200 INFO o.a.k.c.a.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Timed out 2 remaining operation(s) during close.
+2024-06-11 22:44:56,213 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2024-06-11 22:44:56,214 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-11 22:44:56,214 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2024-06-11 22:44:56,234 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2024-06-11 22:44:56,278 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2024-06-11 22:44:56,284 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2024-06-11 22:44:56,309 INFO c.n.d.DiscoveryClient [restartedMain] Disable delta property : false
+2024-06-11 22:44:56,310 INFO c.n.d.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2024-06-11 22:44:56,310 INFO c.n.d.DiscoveryClient [restartedMain] Force full registry fetch : false
+2024-06-11 22:44:56,310 INFO c.n.d.DiscoveryClient [restartedMain] Application is null : false
+2024-06-11 22:44:56,310 INFO c.n.d.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2024-06-11 22:44:56,310 INFO c.n.d.DiscoveryClient [restartedMain] Application version is -1: true
+2024-06-11 22:44:56,311 INFO c.n.d.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2024-06-11 22:44:56,585 INFO c.n.d.DiscoveryClient [restartedMain] The response status is 200
+2024-06-11 22:44:56,588 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2024-06-11 22:44:56,591 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-06-11 22:44:56,596 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1718126096595 with initial instances count: 4
+2024-06-11 22:44:56,614 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application MOVIERATE with eureka with status UP
+2024-06-11 22:44:56,614 INFO c.n.d.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1718126096614, current=UP, previous=STARTING]
+2024-06-11 22:44:56,616 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-06-11 22:44:56,617 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIERATE/IMP-ITPL0656.mshome.net:movieRate:8082: registering service...
+2024-06-11 22:44:56,639 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8082 (http) with context path ''
+2024-06-11 22:44:56,640 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 8082
+2024-06-11 22:44:56,683 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIERATE/IMP-ITPL0656.mshome.net:movieRate:8082 - registration status: 204
+2024-06-11 22:44:56,685 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 85.46 seconds (process running for 88.805)
+2024-06-11 22:44:57,205 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(5)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 22:44:57,205 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(5)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2024-06-11 22:44:57,208 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(5)-127.0.0.1] Completed initialization in 3 ms
+2024-06-11 22:49:55,738 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 22:54:55,743 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 22:59:55,748 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:04:55,752 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:09:55,757 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:14:55,770 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:19:55,782 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:24:55,787 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:29:55,800 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-11 23:33:54,146 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(70)-127.0.0.1] Application shutdown requested.
+2024-06-11 23:33:54,151 INFO o.s.c.n.e.s.EurekaServiceRegistry [RMI TCP Connection(70)-127.0.0.1] Unregistering application MOVIERATE with eureka with status DOWN
+2024-06-11 23:33:54,152 INFO c.n.d.DiscoveryClient$3 [RMI TCP Connection(70)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1718129034151, current=DOWN, previous=UP]
+2024-06-11 23:33:54,152 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIERATE/IMP-ITPL0656.mshome.net:movieRate:8082: registering service...
+2024-06-11 23:33:54,159 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(70)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8082"]
+2024-06-11 23:33:54,179 INFO c.n.d.s.t.d.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/MOVIERATE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/MOVIERATE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:184)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	... 21 more
+
+2024-06-11 23:33:54,180 WARN c.n.d.s.t.d.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/MOVIERATE": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2024-06-11 23:33:54,190 INFO c.n.d.s.t.d.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:298)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:125)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-06-11 23:33:54,191 WARN c.n.d.s.t.d.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: Connection pool shut down
+2024-06-11 23:33:54,191 WARN c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIERATE/IMP-ITPL0656.mshome.net:movieRate:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-11 23:33:54,191 WARN c.n.d.InstanceInfoReplicator [DiscoveryClient-InstanceInfoReplicator-0] There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-11 23:33:54,194 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(70)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-11 23:33:54,202 WARN o.s.b.f.s.DisposableBeanAdapter [RMI TCP Connection(70)-127.0.0.1] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-11 23:33:54,203 INFO c.z.h.HikariDataSource [RMI TCP Connection(70)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-06-11 23:33:54,205 INFO c.z.h.HikariDataSource [RMI TCP Connection(70)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-06-11 23:33:55,207 INFO c.n.d.DiscoveryClient [RMI TCP Connection(70)-127.0.0.1] Shutting down DiscoveryClient ...
+2024-06-11 23:33:58,214 INFO c.n.d.DiscoveryClient [RMI TCP Connection(70)-127.0.0.1] Unregistering ...
+2024-06-11 23:33:58,229 INFO c.n.d.s.t.d.RedirectingEurekaHttpClient [RMI TCP Connection(70)-127.0.0.1] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:298)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:125)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-06-11 23:33:58,231 WARN c.n.d.s.t.d.RetryableEurekaHttpClient [RMI TCP Connection(70)-127.0.0.1] Request execution failed with message: Connection pool shut down
+2024-06-11 23:33:58,231 ERROR c.n.d.DiscoveryClient [RMI TCP Connection(70)-127.0.0.1] DiscoveryClient_MOVIERATE/IMP-ITPL0656.mshome.net:movieRate:8082 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-11 23:33:58,241 INFO c.n.d.DiscoveryClient [RMI TCP Connection(70)-127.0.0.1] Completed shut down of DiscoveryClient

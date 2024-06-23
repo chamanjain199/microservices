@@ -1,0 +1,362 @@
+2024-05-29 09:20:13,118 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-05-29 09:20:13,157 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 27464 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-29 09:20:13,158 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-29 09:20:13,208 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-29 09:20:13,208 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-29 09:20:14,536 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29 09:20:14,664 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2024-05-29 09:20:14,923 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=2b4f8425-1533-3976-b62f-44f7067bd393
+2024-05-29 09:20:15,215 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-29 09:20:15,218 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-29 09:20:15,598 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-29 09:20:15,607 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-29 09:20:15,609 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-29 09:20:15,609 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-29 09:20:15,659 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-29 09:20:15,660 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2450 ms
+2024-05-29 09:20:15,783 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-29 09:20:15,927 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28d1d093
+2024-05-29 09:20:15,929 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-29 09:20:15,938 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-29 09:20:16,269 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-29 09:20:16,737 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-29 09:20:16,784 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-29 09:20:16,789 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-29 09:20:16,789 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-29 09:20:16,789 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-29 09:20:16,789 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-29 09:20:16,790 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-29 09:20:16,790 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-29 09:20:16,790 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-29 09:20:16,807 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-29 09:20:16,808 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-29 09:20:16,891 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29 09:20:16,937 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-05-29 09:20:16,969 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-29 09:20:17,156 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29 09:20:17,192 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-29 09:20:17,949 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29 09:20:17,955 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29 09:20:18,308 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29 09:20:18,361 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: c9a6275d-fa80-4388-b272-78cb438d1246
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-05-29 09:20:18,940 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-29 09:20:19,007 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@578aabc9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@402566c0, org.springframework.security.web.context.SecurityContextHolderFilter@6d3a296b, org.springframework.security.web.header.HeaderWriterFilter@5290705d, org.springframework.web.filter.CorsFilter@69ef1133, org.springframework.security.web.authentication.logout.LogoutFilter@5732a611, com.example.movie.repository.filter.JwtAuthenticationFilter@28e7324b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b6847df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7429bde1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ab1107d, org.springframework.security.web.access.ExceptionTranslationFilter@2d7b9ef4, org.springframework.security.web.access.intercept.AuthorizationFilter@2e97ef8a]
+2024-05-29 09:20:19,609 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-29 09:20:19,644 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2024-05-29 09:20:19,697 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-05-29 09:20:19,776 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2024-05-29 09:20:19,807 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2024-05-29 09:20:19,811 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Disable delta property : false
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Force full registry fetch : false
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Application is null : false
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Application version is -1: true
+2024-05-29 09:20:19,831 INFO c.n.d.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2024-05-29 09:20:20,112 INFO c.n.d.DiscoveryClient [restartedMain] The response status is 200
+2024-05-29 09:20:20,115 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2024-05-29 09:20:20,134 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-05-29 09:20:20,139 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1716954620139 with initial instances count: 3
+2024-05-29 09:20:20,144 INFO c.n.d.DiscoveryClient$3 [DiscoveryClient-InstanceInfoReplicator-0] Saw local status change event StatusChangeEvent [timestamp=1716954620144, current=UP, previous=STARTING]
+2024-05-29 09:20:20,145 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081: registering service...
+2024-05-29 09:20:20,148 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application MOVIEREPOSITORY with eureka with status UP
+2024-05-29 09:20:20,150 WARN c.n.d.InstanceInfoReplicator [restartedMain] Ignoring onDemand update due to rate limiter
+2024-05-29 09:20:20,152 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-29 09:20:20,177 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-29 09:20:20,178 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 8081
+2024-05-29 09:20:20,197 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081 - registration status: 204
+2024-05-29 09:20:20,204 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 7.591 seconds (process running for 8.557)
+2024-05-29 09:20:20,689 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29 09:20:20,689 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(8)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2024-05-29 09:20:20,691 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(8)-127.0.0.1] Completed initialization in 2 ms
+2024-05-29 09:25:19,849 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 09:30:19,852 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 09:35:40,124 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m23s895ms407µs900ns).
+2024-05-29 09:38:13,751 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 09:43:13,759 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:03:53,651 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m13s370ms782µs901ns).
+2024-05-29 10:04:57,087 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:09:57,089 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:14:57,100 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:19:57,107 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:24:57,119 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:29:57,123 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:34:57,132 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 10:47:38,679 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m44s551ms876µs901ns).
+2024-05-29 21:07:02,179 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h16m29s664ms662µs200ns).
+2024-05-29 21:08:05,128 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:13:05,134 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:18:05,137 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:23:05,147 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:28:05,155 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:33:05,162 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:38:05,170 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:42:22,476 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2024-05-29 21:42:22,478 INFO o.s.c.n.e.s.EurekaServiceRegistry [Thread-1] Unregistering application MOVIEREPOSITORY with eureka with status DOWN
+2024-05-29 21:42:22,478 INFO c.n.d.DiscoveryClient$3 [Thread-1] Saw local status change event StatusChangeEvent [timestamp=1716999142478, current=DOWN, previous=UP]
+2024-05-29 21:42:22,480 INFO c.n.d.DiscoveryClient$3 [DiscoveryClient-InstanceInfoReplicator-0] Saw local status change event StatusChangeEvent [timestamp=1716999142480, current=UP, previous=DOWN]
+2024-05-29 21:42:22,480 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081: registering service...
+2024-05-29 21:42:22,483 INFO o.a.j.l.DirectJDKLog [Thread-1] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-29 21:42:22,488 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081 - registration status: 204
+2024-05-29 21:42:22,497 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29 21:42:22,501 INFO c.z.h.HikariDataSource [Thread-1] HikariPool-1 - Shutdown initiated...
+2024-05-29 21:42:22,503 INFO c.z.h.HikariDataSource [Thread-1] HikariPool-1 - Shutdown completed.
+2024-05-29 21:42:22,504 INFO c.n.d.DiscoveryClient [Thread-1] Shutting down DiscoveryClient ...
+2024-05-29 21:42:25,515 INFO c.n.d.DiscoveryClient [Thread-1] Unregistering ...
+2024-05-29 21:42:25,525 INFO c.n.d.s.t.d.RedirectingEurekaHttpClient [Thread-1] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:298)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:125)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:607)
+
+2024-05-29 21:42:25,525 WARN c.n.d.s.t.d.RetryableEurekaHttpClient [Thread-1] Request execution failed with message: Connection pool shut down
+2024-05-29 21:42:25,527 INFO c.n.d.s.t.d.RedirectingEurekaHttpClient [Thread-1] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:298)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:125)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:607)
+
+2024-05-29 21:42:25,528 WARN c.n.d.s.t.d.RetryableEurekaHttpClient [Thread-1] Request execution failed with message: Connection pool shut down
+2024-05-29 21:42:25,528 ERROR c.n.d.DiscoveryClient [Thread-1] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:607)
+2024-05-29 21:42:25,534 INFO c.n.d.DiscoveryClient [Thread-1] Completed shut down of DiscoveryClient
+2024-05-29 21:42:25,759 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 27464 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-29 21:42:25,759 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-29 21:42:26,982 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29 21:42:26,991 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-05-29 21:42:27,078 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=2b4f8425-1533-3976-b62f-44f7067bd393
+2024-05-29 21:42:27,128 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-29 21:42:27,129 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-29 21:42:27,214 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-29 21:42:27,215 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-29 21:42:27,215 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-29 21:42:27,215 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-29 21:42:27,239 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-29 21:42:27,240 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1478 ms
+2024-05-29 21:42:27,309 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-05-29 21:42:27,369 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2d5bc9f3
+2024-05-29 21:42:27,370 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-05-29 21:42:27,370 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-29 21:42:27,471 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-29 21:42:27,806 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-29 21:42:27,820 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-29 21:42:27,822 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-29 21:42:27,822 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-29 21:42:27,822 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-29 21:42:27,822 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-29 21:42:27,822 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-29 21:42:27,822 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-29 21:42:27,825 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-29 21:42:27,826 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-29 21:42:27,875 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29 21:42:27,879 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-29 21:42:27,886 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-29 21:42:27,888 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-29 21:42:27,950 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-29 21:42:27,951 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29 21:42:28,132 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29 21:42:28,166 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: 221bd353-3ad9-45a9-b3b6-ec8f461a9acd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-05-29 21:42:28,499 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-29 21:42:28,526 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48892c0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52b6e46d, org.springframework.security.web.context.SecurityContextHolderFilter@29a5d41c, org.springframework.security.web.header.HeaderWriterFilter@63790390, org.springframework.web.filter.CorsFilter@25aba374, org.springframework.security.web.authentication.logout.LogoutFilter@2606f170, com.example.movie.repository.filter.JwtAuthenticationFilter@8d4707b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d5ed19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69cc61f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9bcec1e, org.springframework.security.web.access.ExceptionTranslationFilter@378ae4b3, org.springframework.security.web.access.intercept.AuthorizationFilter@31c56c03]
+2024-05-29 21:42:28,873 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-29 21:42:28,907 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2024-05-29 21:42:28,945 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-05-29 21:42:28,981 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2024-05-29 21:42:28,988 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2024-05-29 21:42:28,989 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2024-05-29 21:42:28,996 INFO c.n.d.DiscoveryClient [restartedMain] Disable delta property : false
+2024-05-29 21:42:28,997 INFO c.n.d.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2024-05-29 21:42:28,997 INFO c.n.d.DiscoveryClient [restartedMain] Force full registry fetch : false
+2024-05-29 21:42:28,997 INFO c.n.d.DiscoveryClient [restartedMain] Application is null : false
+2024-05-29 21:42:28,997 INFO c.n.d.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2024-05-29 21:42:28,997 INFO c.n.d.DiscoveryClient [restartedMain] Application version is -1: true
+2024-05-29 21:42:28,997 INFO c.n.d.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2024-05-29 21:42:29,015 INFO c.n.d.DiscoveryClient [restartedMain] The response status is 200
+2024-05-29 21:42:29,016 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2024-05-29 21:42:29,017 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-05-29 21:42:29,018 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1716999149018 with initial instances count: 5
+2024-05-29 21:42:29,020 INFO c.n.d.DiscoveryClient$3 [DiscoveryClient-InstanceInfoReplicator-0] Saw local status change event StatusChangeEvent [timestamp=1716999149020, current=UP, previous=STARTING]
+2024-05-29 21:42:29,020 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081: registering service...
+2024-05-29 21:42:29,024 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application MOVIEREPOSITORY with eureka with status UP
+2024-05-29 21:42:29,024 WARN c.n.d.InstanceInfoReplicator [restartedMain] Ignoring onDemand update due to rate limiter
+2024-05-29 21:42:29,025 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-29 21:42:29,028 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIEREPOSITORY/chaman:movieRepository:8081 - registration status: 204
+2024-05-29 21:42:29,028 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-29 21:42:29,029 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 8081
+2024-05-29 21:42:29,049 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 3.341 seconds (process running for 44543.616)
+2024-05-29 21:42:29,053 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-29 21:43:22,230 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29 21:43:22,230 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-29 21:43:22,232 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
+2024-05-29 21:47:29,003 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:52:29,009 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 21:57:29,022 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:12:31,233 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-2 housekeeper] HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=12m33s542ms634µs600ns).
+2024-05-29 22:14:32,563 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:19:32,567 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:24:32,574 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:29:32,577 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:34:32,580 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:39:32,582 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-05-29 22:44:32,596 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration

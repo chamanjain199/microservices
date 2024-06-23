@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="chama (generated)" id="1716132188501-1">
+        <createSequence cacheSize="1" cycle="false" dataType="bigint" incrementBy="50" maxValue="9223372036854775807" minValue="1" sequenceName="movie_comment_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="chama (generated)" id="1716132188501-2">
+        <createSequence cacheSize="1" cycle="false" dataType="bigint" incrementBy="50" maxValue="9223372036854775807" minValue="1" sequenceName="movie_rating_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="chama (generated)" id="1716132188501-3">
+        <createTable tableName="movie_comment">
+            <column name="comment_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="movie_comment_pkey"/>
+            </column>
+            <column name="movie_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="comment" type="VARCHAR(255)"/>
+            <column name="commnend_by" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="chama (generated)" id="1716132188501-4">
+        <createTable tableName="movie_rating">
+            <column name="rating" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="movie_rating_pkey"/>
+            </column>
+            <column name="movie_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rate_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="rate_by" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

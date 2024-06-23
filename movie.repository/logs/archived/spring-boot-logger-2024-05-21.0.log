@@ -1,0 +1,345 @@
+2024-05-21 08:39:15,909 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-05-21 08:39:15,931 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7512 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 08:39:15,932 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 08:39:15,970 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-21 08:39:15,971 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-21 08:39:16,559 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 08:39:16,596 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2024-05-21 08:39:16,949 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 08:39:16,957 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 08:39:16,958 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 08:39:16,958 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 08:39:17,000 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 08:39:17,001 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1030 ms
+2024-05-21 08:39:17,023 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-21 08:39:17,152 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7925f1d
+2024-05-21 08:39:17,153 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-21 08:39:17,161 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 08:39:17,331 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 08:39:17,673 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 08:39:17,706 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 08:39:17,711 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 08:39:17,711 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 08:39:17,711 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 08:39:17,711 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 08:39:17,712 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 08:39:17,712 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 08:39:17,712 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 08:39:17,725 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 08:39:17,727 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 08:39:17,788 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 08:39:17,828 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-21 08:39:17,850 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 08:39:17,987 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 08:39:18,015 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 08:39:18,560 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 08:39:18,562 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 08:39:18,799 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 08:39:19,127 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-21 08:39:19,147 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 08:39:19,159 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 08:39:19,166 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 3.605 seconds (process running for 4.201)
+2024-05-21 10:22:27,044 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h39m39s766ms757µs).
+2024-05-21 10:23:30,948 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-21 10:23:30,955 INFO o.a.j.l.DirectJDKLog [Thread-1] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:30,966 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:30,969 INFO c.z.h.HikariDataSource [Thread-1] HikariPool-1 - Shutdown initiated...
+2024-05-21 10:23:30,973 INFO c.z.h.HikariDataSource [Thread-1] HikariPool-1 - Shutdown completed.
+2024-05-21 10:23:31,150 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7512 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 10:23:31,150 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 10:23:31,343 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 10:23:31,351 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-05-21 10:23:31,483 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 10:23:31,483 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:31,484 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 10:23:31,484 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 10:23:31,509 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 10:23:31,509 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 357 ms
+2024-05-21 10:23:31,519 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-05-21 10:23:31,566 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@45aafa2d
+2024-05-21 10:23:31,566 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-05-21 10:23:31,567 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 10:23:31,598 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 10:23:31,710 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 10:23:31,726 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 10:23:31,726 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 10:23:31,727 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 10:23:31,727 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 10:23:31,727 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 10:23:31,727 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 10:23:31,727 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 10:23:31,731 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 10:23:31,732 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 10:23:31,750 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 10:23:31,753 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 10:23:31,758 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 10:23:31,760 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 10:23:31,801 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 10:23:31,801 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:31,876 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 10:23:31,976 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-21 10:23:31,984 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:31,987 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 10:23:31,990 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.866 seconds (process running for 6257.025)
+2024-05-21 10:23:31,992 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-21 10:23:33,388 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-05-21 10:23:33,391 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:33,398 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:33,400 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-2 - Shutdown initiated...
+2024-05-21 10:23:33,403 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-2 - Shutdown completed.
+2024-05-21 10:23:33,526 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7512 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 10:23:33,527 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 10:23:33,730 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 10:23:33,737 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-05-21 10:23:33,795 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 10:23:33,796 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:33,796 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 10:23:33,796 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 10:23:33,813 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 10:23:33,813 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 283 ms
+2024-05-21 10:23:33,821 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2024-05-21 10:23:33,872 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@3c277410
+2024-05-21 10:23:33,872 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2024-05-21 10:23:33,872 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 10:23:33,911 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 10:23:34,058 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 10:23:34,069 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 10:23:34,069 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 10:23:34,070 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 10:23:34,070 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 10:23:34,070 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 10:23:34,070 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 10:23:34,071 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 10:23:34,074 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 10:23:34,075 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 10:23:34,094 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 10:23:34,096 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 10:23:34,101 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 10:23:34,102 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 10:23:34,146 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 10:23:34,146 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:34,211 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 10:23:34,345 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-21 10:23:34,354 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:34,357 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 10:23:34,375 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.881 seconds (process running for 6259.409)
+2024-05-21 10:23:34,377 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-21 10:23:35,776 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-05-21 10:23:35,779 INFO o.a.j.l.DirectJDKLog [Thread-9] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:35,792 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:35,793 INFO c.z.h.HikariDataSource [Thread-9] HikariPool-3 - Shutdown initiated...
+2024-05-21 10:23:35,797 INFO c.z.h.HikariDataSource [Thread-9] HikariPool-3 - Shutdown completed.
+2024-05-21 10:23:35,869 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7512 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 10:23:35,870 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 10:23:35,987 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 10:23:35,993 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-05-21 10:23:36,046 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 10:23:36,047 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:36,048 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 10:23:36,048 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 10:23:36,069 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 10:23:36,069 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 198 ms
+2024-05-21 10:23:36,077 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2024-05-21 10:23:36,131 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@22288005
+2024-05-21 10:23:36,131 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2024-05-21 10:23:36,131 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 10:23:36,155 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 10:23:36,219 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 10:23:36,229 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 10:23:36,229 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 10:23:36,229 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 10:23:36,229 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 10:23:36,229 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 10:23:36,230 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 10:23:36,230 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 10:23:36,234 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 10:23:36,234 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 10:23:36,245 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 10:23:36,247 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 10:23:36,250 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 10:23:36,252 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 10:23:36,285 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 10:23:36,286 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:36,347 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 10:23:36,445 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-21 10:23:36,455 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:36,459 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 10:23:36,464 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.613 seconds (process running for 6261.499)
+2024-05-21 10:23:36,466 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-21 10:23:55,116 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-21 10:23:55,119 INFO o.a.j.l.DirectJDKLog [Thread-13] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:55,127 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-13] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:55,128 INFO c.z.h.HikariDataSource [Thread-13] HikariPool-4 - Shutdown initiated...
+2024-05-21 10:23:55,131 INFO c.z.h.HikariDataSource [Thread-13] HikariPool-4 - Shutdown completed.
+2024-05-21 10:23:55,206 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7512 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 10:23:55,207 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 10:23:55,327 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 10:23:55,335 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-05-21 10:23:55,416 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 10:23:55,417 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:55,417 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 10:23:55,417 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 10:23:55,437 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 10:23:55,438 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 230 ms
+2024-05-21 10:23:55,453 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2024-05-21 10:23:55,501 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@506010c2
+2024-05-21 10:23:55,502 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2024-05-21 10:23:55,502 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 10:23:55,528 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 10:23:55,595 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 10:23:55,606 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 10:23:55,611 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 10:23:55,612 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 10:23:55,624 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 10:23:55,625 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 10:23:55,628 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 10:23:55,630 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 10:23:55,667 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 10:23:55,668 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:55,728 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 10:23:55,816 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-21 10:23:55,823 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:55,827 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 10:23:55,833 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.646 seconds (process running for 6280.867)
+2024-05-21 10:23:55,836 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-21 10:23:58,272 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-21 10:23:58,275 INFO o.a.j.l.DirectJDKLog [Thread-17] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:58,283 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-17] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:58,283 INFO c.z.h.HikariDataSource [Thread-17] HikariPool-5 - Shutdown initiated...
+2024-05-21 10:23:58,287 INFO c.z.h.HikariDataSource [Thread-17] HikariPool-5 - Shutdown completed.
+2024-05-21 10:23:58,371 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 7512 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 10:23:58,371 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 10:23:58,499 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 10:23:58,503 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-05-21 10:23:58,562 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 10:23:58,562 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:58,562 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 10:23:58,563 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 10:23:58,580 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 10:23:58,581 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 208 ms
+2024-05-21 10:23:58,594 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2024-05-21 10:23:58,640 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@752165a
+2024-05-21 10:23:58,640 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2024-05-21 10:23:58,640 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 10:23:58,661 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 10:23:58,735 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 10:23:58,747 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 10:23:58,751 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 10:23:58,752 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 10:23:58,767 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 10:23:58,769 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 10:23:58,772 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 10:23:58,773 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 10:23:58,807 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 10:23:58,807 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:23:58,858 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 10:23:58,959 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-05-21 10:23:58,968 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:23:58,972 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 10:23:58,979 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.625 seconds (process running for 6284.014)
+2024-05-21 10:23:58,981 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-21 10:40:35,803 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(37)-127.0.0.1] Application shutdown requested.
+2024-05-21 10:40:35,806 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(37)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 10:40:35,817 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(37)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 10:40:35,819 INFO c.z.h.HikariDataSource [RMI TCP Connection(37)-127.0.0.1] HikariPool-6 - Shutdown initiated...
+2024-05-21 10:40:35,823 INFO c.z.h.HikariDataSource [RMI TCP Connection(37)-127.0.0.1] HikariPool-6 - Shutdown completed.
+2024-05-21 21:48:06,205 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-05-21 21:48:06,232 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 15708 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 21:48:06,233 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 21:48:06,276 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-21 21:48:06,277 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-21 21:48:06,925 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 21:48:06,964 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2024-05-21 21:48:07,322 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 21:48:07,333 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 21:48:07,334 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 21:48:07,335 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 21:48:07,375 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 21:48:07,376 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1099 ms
+2024-05-21 21:48:07,400 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-05-21 21:48:07,539 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7af7c553
+2024-05-21 21:48:07,540 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-05-21 21:48:07,549 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 21:48:07,716 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 21:48:08,093 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 21:48:08,126 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 21:48:08,131 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 21:48:08,132 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 21:48:08,132 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 21:48:08,132 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 21:48:08,132 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 21:48:08,132 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 21:48:08,133 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 21:48:08,149 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 21:48:08,150 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 21:48:08,206 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 21:48:08,240 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-21 21:48:08,260 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 21:48:08,399 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 21:48:08,428 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 21:48:08,968 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 21:48:08,971 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 21:48:09,203 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 21:48:09,509 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-21 21:48:09,532 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 21:48:09,546 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 21:48:09,553 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 3.706 seconds (process running for 4.255)
+2024-05-21 22:19:02,093 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m24s310ms903µs).
+2024-05-21 22:19:21,780 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2024-05-21 22:19:21,784 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8081"]
+2024-05-21 22:19:21,793 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 22:19:21,797 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2024-05-21 22:19:21,799 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2024-05-21 22:19:21,997 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 15708 (E:\RTB projects\ws\movie.repository\target\classes started by chama in E:\RTB projects\ws\movie.repository)
+2024-05-21 22:19:21,997 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 22:19:22,144 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 22:19:22,150 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-05-21 22:19:22,247 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-05-21 22:19:22,248 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 22:19:22,248 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-05-21 22:19:22,249 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 22:19:22,264 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-21 22:19:22,265 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 266 ms
+2024-05-21 22:19:22,276 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-05-21 22:19:22,314 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3923c084
+2024-05-21 22:19:22,315 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-05-21 22:19:22,315 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/movie_repository'
+2024-05-21 22:19:22,340 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to public
+2024-05-21 22:19:22,423 INFO l.l.c.JavaLogger [restartedMain] Reading from public.databasechangelog
+2024-05-21 22:19:22,434 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-05-21 22:19:22,434 INFO l.l.c.JavaLogger [restartedMain] Run:                          0
+2024-05-21 22:19:22,435 INFO l.l.c.JavaLogger [restartedMain] Previously run:               2
+2024-05-21 22:19:22,435 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-05-21 22:19:22,435 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-05-21 22:19:22,435 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            2
+2024-05-21 22:19:22,436 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-05-21 22:19:22,439 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-05-21 22:19:22,440 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-05-21 22:19:22,454 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 22:19:22,456 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-21 22:19:22,459 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 22:19:22,460 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 22:19:22,492 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 22:19:22,493 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 22:19:22,562 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 22:19:22,675 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-21 22:19:22,684 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 22:19:22,687 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 22:19:22,691 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 0.716 seconds (process running for 1877.394)
+2024-05-21 22:19:22,693 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-21 22:23:36,183 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-21 22:23:36,184 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-05-21 22:23:36,186 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Completed initialization in 1 ms
+2024-05-21 22:23:36,562 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-2] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.movie.repository.dto.MovieDTO> com.example.movie.repository.controller.MovieController.createMovie(com.example.movie.repository.dto.MovieDTO): [Field error in object 'movieDTO' on field 'genre': rejected value [null]; codes [NotBlank.movieDTO.genre,NotBlank.genre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [movieDTO.genre,genre]; arguments []; default message [genre]]; default message [must not be blank]] ]

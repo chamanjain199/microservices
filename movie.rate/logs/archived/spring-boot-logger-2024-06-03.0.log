@@ -1,0 +1,244 @@
+2024-06-03 00:01:09,815 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:00:08,280 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-03 18:00:08,330 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 23992 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-06-03 18:00:08,331 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2024-06-03 18:00:08,385 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-03 18:00:08,408 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-03 18:00:10,142 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03 18:00:10,260 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2024-06-03 18:00:10,774 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=bf66f6dd-7653-3371-aae7-b5f3cdd0c276
+2024-06-03 18:00:11,228 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-03 18:00:11,235 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-03 18:00:11,805 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8082 (http)
+2024-06-03 18:00:11,818 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-03 18:00:11,822 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-03 18:00:11,823 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 18:00:11,934 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-03 18:00:11,935 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3526 ms
+2024-06-03 18:00:12,561 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-06-03 18:00:12,818 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1fc124d1-e58f-458d-a811-a5891dc5fd9b user=SA
+2024-06-03 18:00:12,820 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-06-03 18:00:12,836 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1fc124d1-e58f-458d-a811-a5891dc5fd9b'
+2024-06-03 18:00:13,152 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to PUBLIC
+2024-06-03 18:00:13,275 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-06-03 18:00:13,277 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2024-06-03 18:00:13,278 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-06-03 18:00:13,280 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-06-03 18:00:14,295 WARN z.r.AsyncReporter$BoundedAsyncReporter [restartedMain] Timed out waiting for in-flight spans to send
+2024-06-03 18:00:14,299 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2024-06-03 18:00:14,330 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-03 18:00:14,362 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2024-06-03 18:05:30,716 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-03 18:05:30,869 INFO o.s.b.StartupInfoLogger [restartedMain] Starting Application using Java 21.0.1 with PID 21260 (E:\RTB projects\ws\movie.rate\target\classes started by chama in E:\RTB projects\ws\movie.rate)
+2024-06-03 18:05:30,877 INFO o.s.b.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2024-06-03 18:05:31,111 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-03 18:05:31,114 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-03 18:05:36,926 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03 18:05:37,388 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 445 ms. Found 2 JPA repository interfaces.
+2024-06-03 18:05:39,512 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=bf66f6dd-7653-3371-aae7-b5f3cdd0c276
+2024-06-03 18:05:40,727 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-03 18:05:40,743 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-03 18:05:42,436 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8082 (http)
+2024-06-03 18:05:42,483 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-03 18:05:42,492 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-03 18:05:42,493 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 18:05:42,721 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-03 18:05:42,723 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 11602 ms
+2024-06-03 18:05:44,900 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-06-03 18:05:45,713 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e5ccde10-ec60-4830-acb2-52790336f103 user=SA
+2024-06-03 18:05:45,721 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-06-03 18:05:45,776 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e5ccde10-ec60-4830-acb2-52790336f103'
+2024-06-03 18:05:46,868 INFO l.l.c.JavaLogger [restartedMain] Set default schema name to PUBLIC
+2024-06-03 18:05:49,862 INFO l.l.c.JavaLogger [restartedMain] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-03 18:05:50,584 INFO l.l.c.JavaLogger [restartedMain] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-03 18:05:51,142 INFO l.l.c.JavaLogger [restartedMain] Successfully acquired change log lock
+2024-06-03 18:05:51,149 INFO l.l.c.JavaLogger [restartedMain] Using deploymentId: 7418151148
+2024-06-03 18:05:51,158 INFO l.l.c.JavaLogger [restartedMain] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-03 18:05:51,277 INFO l.l.c.JavaLogger [restartedMain] Sequence movie_comment_seq created
+2024-06-03 18:05:51,281 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-1::chama (generated) ran successfully in 21ms
+2024-06-03 18:05:51,312 INFO l.l.c.JavaLogger [restartedMain] Sequence movie_rating_seq created
+2024-06-03 18:05:51,315 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-2::chama (generated) ran successfully in 8ms
+2024-06-03 18:05:51,353 INFO l.l.c.JavaLogger [restartedMain] Table movie_comment created
+2024-06-03 18:05:51,355 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-3::chama (generated) ran successfully in 11ms
+2024-06-03 18:05:51,376 INFO l.l.c.JavaLogger [restartedMain] Table movie_rating created
+2024-06-03 18:05:51,377 INFO l.l.c.JavaLogger [restartedMain] ChangeSet db/changelog/01.xml::1716132188501-4::chama (generated) ran successfully in 10ms
+2024-06-03 18:05:51,402 INFO l.l.c.JavaLogger [restartedMain] UPDATE SUMMARY
+2024-06-03 18:05:51,403 INFO l.l.c.JavaLogger [restartedMain] Run:                          4
+2024-06-03 18:05:51,404 INFO l.l.c.JavaLogger [restartedMain] Previously run:               0
+2024-06-03 18:05:51,404 INFO l.l.c.JavaLogger [restartedMain] Filtered out:                 0
+2024-06-03 18:05:51,405 INFO l.l.c.JavaLogger [restartedMain] -------------------------------
+2024-06-03 18:05:51,407 INFO l.l.c.JavaLogger [restartedMain] Total change sets:            4
+2024-06-03 18:05:51,408 INFO l.l.c.JavaLogger [restartedMain] Update summary generated
+2024-06-03 18:05:51,416 INFO l.l.c.JavaLogger [restartedMain] Update command completed successfully.
+2024-06-03 18:05:51,431 INFO l.l.c.JavaLogger [restartedMain] Successfully released change log lock
+2024-06-03 18:05:51,434 INFO l.l.c.JavaLogger [restartedMain] Command execution complete
+2024-06-03 18:05:51,851 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03 18:05:51,988 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-03 18:05:52,088 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-06-03 18:05:53,250 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03 18:05:57,840 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03 18:05:57,850 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03 18:06:00,983 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03 18:06:01,769 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-06-03 18:06:02,207 INFO o.s.c.o.FeignClientFactoryBean [restartedMain] For 'MOVIEREPOSITORY' URL not provided. Will try picking an instance via load-balancing.
+2024-06-03 18:06:02,992 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03 18:06:07,297 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: f26ef2e9-7112-4e29-b398-d1f67773894e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-03 18:06:14,020 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 26 endpoint(s) beneath base path '/actuator'
+2024-06-03 18:06:14,461 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@362ec3e4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e92aa43, org.springframework.security.web.context.SecurityContextHolderFilter@5d3cceae, org.springframework.security.web.header.HeaderWriterFilter@3c467dc5, org.springframework.web.filter.CorsFilter@563e167f, org.springframework.security.web.authentication.logout.LogoutFilter@60a9ae5c, com.example.movie.rate.filter.JwtAuthenticationFilter@583e7829, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ea8375c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e6c502b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@184fb129, org.springframework.security.web.access.ExceptionTranslationFilter@63ee5bb4, org.springframework.security.web.access.intercept.AuthorizationFilter@3dd475d4]
+2024-06-03 18:06:23,338 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2024-06-03 18:06:24,039 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-03 18:06:24,958 INFO o.a.k.c.c.AbstractConfig [restartedMain] AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-03 18:06:25,787 INFO o.a.k.c.u.AppInfoParser$AppInfo [restartedMain] Kafka version: 3.6.2
+2024-06-03 18:06:25,789 INFO o.a.k.c.u.AppInfoParser$AppInfo [restartedMain] Kafka commitId: c4deed513057c94e
+2024-06-03 18:06:25,789 INFO o.a.k.c.u.AppInfoParser$AppInfo [restartedMain] Kafka startTimeMs: 1717418185777
+2024-06-03 18:06:36,930 INFO o.a.k.c.u.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2024-06-03 18:06:36,962 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2024-06-03 18:06:36,963 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-03 18:06:36,965 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2024-06-03 18:06:37,091 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2024-06-03 18:06:37,479 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2024-06-03 18:06:37,563 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2024-06-03 18:06:37,880 INFO c.n.d.DiscoveryClient [restartedMain] Disable delta property : false
+2024-06-03 18:06:37,881 INFO c.n.d.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2024-06-03 18:06:37,882 INFO c.n.d.DiscoveryClient [restartedMain] Force full registry fetch : false
+2024-06-03 18:06:37,924 INFO c.n.d.DiscoveryClient [restartedMain] Application is null : false
+2024-06-03 18:06:37,925 INFO c.n.d.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2024-06-03 18:06:37,926 INFO c.n.d.DiscoveryClient [restartedMain] Application version is -1: true
+2024-06-03 18:06:37,927 INFO c.n.d.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2024-06-03 18:06:39,958 INFO c.n.d.DiscoveryClient [restartedMain] The response status is 200
+2024-06-03 18:06:39,977 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2024-06-03 18:06:39,991 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-06-03 18:06:40,028 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1717418200023 with initial instances count: 4
+2024-06-03 18:06:40,194 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application MOVIERATE with eureka with status UP
+2024-06-03 18:06:40,197 INFO c.n.d.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1717418200197, current=UP, previous=STARTING]
+2024-06-03 18:06:40,208 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2024-06-03 18:06:40,209 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIERATE/chaman.mshome.net:movieRate:8082: registering service...
+2024-06-03 18:06:40,342 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8082 (http) with context path ''
+2024-06-03 18:06:40,346 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 8082
+2024-06-03 18:06:40,593 INFO o.s.b.StartupInfoLogger [restartedMain] Started Application in 71.635 seconds (process running for 74.801)
+2024-06-03 18:06:40,703 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MOVIERATE/chaman.mshome.net:movieRate:8082 - registration status: 204
+2024-06-03 18:06:42,241 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(5)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 18:06:42,264 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(5)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2024-06-03 18:06:42,287 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(5)-127.0.0.1] Completed initialization in 19 ms
+2024-06-03 18:11:37,953 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:16:37,963 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:21:37,973 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:26:37,986 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:31:37,995 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:36:38,002 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:41:38,016 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:46:38,018 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 18:51:38,033 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 19:18:55,393 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m38s670ms650µs700ns).
+2024-06-03 19:19:46,703 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 19:24:46,709 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:02:40,333 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h33m44s777ms318µs100ns).
+2024-06-03 21:03:01,492 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:08:01,494 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:28:32,356 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m21s869ms573µs800ns).
+2024-06-03 21:28:53,348 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:33:53,352 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:38:53,364 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:43:53,368 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:48:53,372 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:53:53,375 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 21:58:53,388 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 22:03:53,391 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 22:46:07,218 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m34s201ms309µs200ns).
+2024-06-03 22:47:57,585 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 22:52:57,598 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 22:57:57,609 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 23:02:57,610 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 23:07:57,624 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 23:12:57,632 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2024-06-03 23:17:57,647 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration

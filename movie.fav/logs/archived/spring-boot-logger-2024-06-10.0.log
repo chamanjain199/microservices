@@ -1,0 +1,304 @@
+2024-06-08 22:17:30,069 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-08 22:17:30,104 INFO o.s.b.StartupInfoLogger [main] Starting FavoriteMovieServiceImplTest using Java 21.0.1 with PID 24364 (started by chama in E:\RTB projects\ws\movie.fav)
+2024-06-08 22:17:30,107 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2024-06-08 22:17:31,623 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-08 22:17:31,776 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 144 ms. Found 1 JPA repository interface.
+2024-06-08 22:17:32,174 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=df87950a-1361-3e76-a124-051ee62e530c
+2024-06-08 22:17:33,521 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-08 22:17:33,528 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-08 22:17:33,717 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-08 22:17:33,889 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:54bd3650-8223-4761-ba38-170a57c1d838 user=SA
+2024-06-08 22:17:33,891 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-08 22:17:33,959 INFO l.l.c.JavaLogger [main] Set default schema name to PUBLIC
+2024-06-08 22:17:34,426 INFO l.l.c.JavaLogger [main] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-08 22:17:34,517 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 22:17:34,590 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-06-08 22:17:34,592 INFO l.l.c.JavaLogger [main] Using deploymentId: 7865254591
+2024-06-08 22:17:34,594 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 22:17:34,610 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-1::chama (generated)
+2024-06-08 22:17:34,616 INFO l.l.c.JavaLogger [main] Sequence fav_movie_seq created
+2024-06-08 22:17:34,617 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-1::chama (generated) ran successfully in 6ms
+2024-06-08 22:17:34,626 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-4::chama (generated)
+2024-06-08 22:17:34,628 INFO l.l.c.JavaLogger [main] Table favorite_movie created
+2024-06-08 22:17:34,629 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-4::chama (generated) ran successfully in 3ms
+2024-06-08 22:17:34,636 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-06-08 22:17:34,637 INFO l.l.c.JavaLogger [main] Run:                          2
+2024-06-08 22:17:34,637 INFO l.l.c.JavaLogger [main] Previously run:               0
+2024-06-08 22:17:34,637 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-06-08 22:17:34,637 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-06-08 22:17:34,638 INFO l.l.c.JavaLogger [main] Total change sets:            2
+2024-06-08 22:17:34,639 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-06-08 22:17:34,642 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-06-08 22:17:34,643 INFO l.l.c.JavaLogger [main] Liquibase: Update has been successful. Rows affected: 2
+2024-06-08 22:17:34,645 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-06-08 22:17:34,647 INFO l.l.c.JavaLogger [main] Command execution complete
+2024-06-08 22:17:34,815 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-08 22:17:34,886 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-08 22:17:34,938 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-08 22:17:35,064 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-08 22:17:35,706 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-08 22:17:35,708 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 22:17:35,977 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-08 22:17:36,085 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: c38100b3-7d3e-4b3c-8c04-066610828972
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-08 22:17:36,108 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-06-08 22:17:36,736 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2024-06-08 22:17:37,023 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66f99dcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@321c6e0c, org.springframework.security.web.context.SecurityContextHolderFilter@54d66499, org.springframework.security.web.header.HeaderWriterFilter@7890189, org.springframework.web.filter.CorsFilter@1f953288, org.springframework.security.web.authentication.logout.LogoutFilter@1448e2b6, com.example.movie.fav.filter.JwtAuthenticationFilter@30ca1686, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15329cf9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@255d68d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a77faae, org.springframework.security.web.access.ExceptionTranslationFilter@2c992252, org.springframework.security.web.access.intercept.AuthorizationFilter@2ea7e25d]
+2024-06-08 22:17:38,367 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2024-06-08 22:17:38,452 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-08 22:17:38,543 INFO o.s.b.StartupInfoLogger [main] Started FavoriteMovieServiceImplTest in 8.886 seconds (process running for 9.907)
+2024-06-08 22:17:38,872 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 22:17:38,874 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-08 22:17:38,877 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-08 22:45:39,195 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-08 22:45:39,226 INFO o.s.b.StartupInfoLogger [main] Starting FavoriteMovieServiceImplTest using Java 21.0.1 with PID 24572 (started by chama in E:\RTB projects\ws\movie.fav)
+2024-06-08 22:45:39,227 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2024-06-08 22:45:40,581 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-08 22:45:40,718 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+2024-06-08 22:45:41,130 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=df87950a-1361-3e76-a124-051ee62e530c
+2024-06-08 22:45:42,489 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-08 22:45:42,496 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-08 22:45:42,697 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-08 22:45:42,879 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:42fbf9df-689d-443d-a2a3-d21a9d7f2b9f user=SA
+2024-06-08 22:45:42,881 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-08 22:45:42,952 INFO l.l.c.JavaLogger [main] Set default schema name to PUBLIC
+2024-06-08 22:45:43,453 INFO l.l.c.JavaLogger [main] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-08 22:45:43,562 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 22:45:43,636 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-06-08 22:45:43,638 INFO l.l.c.JavaLogger [main] Using deploymentId: 7866943638
+2024-06-08 22:45:43,641 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 22:45:43,657 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-1::chama (generated)
+2024-06-08 22:45:43,661 INFO l.l.c.JavaLogger [main] Sequence fav_movie_seq created
+2024-06-08 22:45:43,663 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-1::chama (generated) ran successfully in 5ms
+2024-06-08 22:45:43,671 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-4::chama (generated)
+2024-06-08 22:45:43,674 INFO l.l.c.JavaLogger [main] Table favorite_movie created
+2024-06-08 22:45:43,674 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-4::chama (generated) ran successfully in 2ms
+2024-06-08 22:45:43,681 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-06-08 22:45:43,682 INFO l.l.c.JavaLogger [main] Run:                          2
+2024-06-08 22:45:43,682 INFO l.l.c.JavaLogger [main] Previously run:               0
+2024-06-08 22:45:43,682 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-06-08 22:45:43,683 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-06-08 22:45:43,683 INFO l.l.c.JavaLogger [main] Total change sets:            2
+2024-06-08 22:45:43,684 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-06-08 22:45:43,687 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-06-08 22:45:43,688 INFO l.l.c.JavaLogger [main] Liquibase: Update has been successful. Rows affected: 2
+2024-06-08 22:45:43,690 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-06-08 22:45:43,692 INFO l.l.c.JavaLogger [main] Command execution complete
+2024-06-08 22:45:43,834 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-08 22:45:43,916 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-08 22:45:43,960 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-08 22:45:44,089 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-08 22:45:44,733 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-08 22:45:44,736 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 22:45:44,984 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-08 22:45:45,091 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: e813839a-1a93-4dab-bb3d-b06d3ee125d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-08 22:45:45,119 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-06-08 22:45:45,812 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2024-06-08 22:45:46,099 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c238bbf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50603313, org.springframework.security.web.context.SecurityContextHolderFilter@6deda1cd, org.springframework.security.web.header.HeaderWriterFilter@58c7bb01, org.springframework.web.filter.CorsFilter@29a01820, org.springframework.security.web.authentication.logout.LogoutFilter@74f17bb8, com.example.movie.fav.filter.JwtAuthenticationFilter@2ec969ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dc8cafb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6129f50e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e0771af, org.springframework.security.web.access.ExceptionTranslationFilter@15329cf9, org.springframework.security.web.access.intercept.AuthorizationFilter@ae8aade]
+2024-06-08 22:45:47,421 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2024-06-08 22:45:47,507 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-08 22:45:47,610 INFO o.s.b.StartupInfoLogger [main] Started FavoriteMovieServiceImplTest in 8.832 seconds (process running for 9.686)
+2024-06-08 22:45:47,932 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 22:45:47,935 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-08 22:45:47,939 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-08 23:08:03,611 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-08 23:08:03,656 INFO o.s.b.StartupInfoLogger [main] Starting FavoriteMovieControllerTest using Java 21.0.1 with PID 16660 (started by chama in E:\RTB projects\ws\movie.fav)
+2024-06-08 23:08:03,658 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2024-06-08 23:08:05,004 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-08 23:08:05,139 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2024-06-08 23:08:05,576 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=0914fcb1-7cf4-3047-bbd8-399c990e9ac0
+2024-06-08 23:08:06,870 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-08 23:08:06,879 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-08 23:08:07,092 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-08 23:08:07,283 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b3701667-bae3-4281-9bd9-27ea64846625 user=SA
+2024-06-08 23:08:07,285 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-08 23:08:07,360 INFO l.l.c.JavaLogger [main] Set default schema name to PUBLIC
+2024-06-08 23:08:07,883 INFO l.l.c.JavaLogger [main] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-08 23:08:07,987 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 23:08:08,073 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-06-08 23:08:08,074 INFO l.l.c.JavaLogger [main] Using deploymentId: 7868288074
+2024-06-08 23:08:08,077 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 23:08:08,092 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-1::chama (generated)
+2024-06-08 23:08:08,099 INFO l.l.c.JavaLogger [main] Sequence fav_movie_seq created
+2024-06-08 23:08:08,100 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-1::chama (generated) ran successfully in 6ms
+2024-06-08 23:08:08,110 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-4::chama (generated)
+2024-06-08 23:08:08,112 INFO l.l.c.JavaLogger [main] Table favorite_movie created
+2024-06-08 23:08:08,113 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-4::chama (generated) ran successfully in 3ms
+2024-06-08 23:08:08,122 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-06-08 23:08:08,122 INFO l.l.c.JavaLogger [main] Run:                          2
+2024-06-08 23:08:08,123 INFO l.l.c.JavaLogger [main] Previously run:               0
+2024-06-08 23:08:08,123 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-06-08 23:08:08,123 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-06-08 23:08:08,123 INFO l.l.c.JavaLogger [main] Total change sets:            2
+2024-06-08 23:08:08,124 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-06-08 23:08:08,127 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-06-08 23:08:08,128 INFO l.l.c.JavaLogger [main] Liquibase: Update has been successful. Rows affected: 2
+2024-06-08 23:08:08,130 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-06-08 23:08:08,132 INFO l.l.c.JavaLogger [main] Command execution complete
+2024-06-08 23:08:08,285 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-08 23:08:08,356 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-08 23:08:08,392 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-08 23:08:08,528 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-08 23:08:09,243 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-08 23:08:09,246 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 23:08:09,526 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-08 23:08:09,648 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: e07c026e-fa27-4319-8d9b-7c838d1e65b1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-08 23:08:09,674 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-06-08 23:08:10,352 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2024-06-08 23:08:10,645 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c110f87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1919b5b0, org.springframework.security.web.context.SecurityContextHolderFilter@5b9037b6, org.springframework.security.web.header.HeaderWriterFilter@26838837, org.springframework.web.filter.CorsFilter@60a07d77, org.springframework.security.web.authentication.logout.LogoutFilter@78d0baeb, com.example.movie.fav.filter.JwtAuthenticationFilter@76795a95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3815c525, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fa67a80, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32d00eea, org.springframework.security.web.access.ExceptionTranslationFilter@38280b42, org.springframework.security.web.access.intercept.AuthorizationFilter@3e84c698]
+2024-06-08 23:08:12,095 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-08 23:08:12,668 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-06-08 23:08:12,669 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2024-06-08 23:08:12,670 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2024-06-08 23:08:12,741 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2024-06-08 23:08:12,841 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-08 23:08:12,943 INFO o.s.b.StartupInfoLogger [main] Started FavoriteMovieControllerTest in 9.74 seconds (process running for 10.734)
+2024-06-08 23:08:13,114 INFO o.s.c.o.FeignClientFactoryBean [main] For 'MOVIEREPOSITORY' URL not provided. Will try picking an instance via load-balancing.
+2024-06-08 23:08:13,319 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 23:08:13,321 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-08 23:08:13,323 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-08 23:14:01,377 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-08 23:14:01,426 INFO o.s.b.StartupInfoLogger [main] Starting FavoriteMovieControllerTest using Java 21.0.1 with PID 3504 (started by chama in E:\RTB projects\ws\movie.fav)
+2024-06-08 23:14:01,427 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2024-06-08 23:14:03,073 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-08 23:14:03,267 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 186 ms. Found 1 JPA repository interface.
+2024-06-08 23:14:03,854 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=0914fcb1-7cf4-3047-bbd8-399c990e9ac0
+2024-06-08 23:14:05,335 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-08 23:14:05,344 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-08 23:14:05,604 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-08 23:14:05,912 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e3b0d1d1-3ef1-4957-862b-8f56a03dce6a user=SA
+2024-06-08 23:14:05,915 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-08 23:14:06,029 INFO l.l.c.JavaLogger [main] Set default schema name to PUBLIC
+2024-06-08 23:14:06,712 INFO l.l.c.JavaLogger [main] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-08 23:14:06,855 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 23:14:06,968 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-06-08 23:14:06,970 INFO l.l.c.JavaLogger [main] Using deploymentId: 7868646969
+2024-06-08 23:14:06,973 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-08 23:14:06,994 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-1::chama (generated)
+2024-06-08 23:14:07,006 INFO l.l.c.JavaLogger [main] Sequence fav_movie_seq created
+2024-06-08 23:14:07,007 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-1::chama (generated) ran successfully in 10ms
+2024-06-08 23:14:07,019 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-4::chama (generated)
+2024-06-08 23:14:07,023 INFO l.l.c.JavaLogger [main] Table favorite_movie created
+2024-06-08 23:14:07,023 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-4::chama (generated) ran successfully in 3ms
+2024-06-08 23:14:07,034 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-06-08 23:14:07,034 INFO l.l.c.JavaLogger [main] Run:                          2
+2024-06-08 23:14:07,035 INFO l.l.c.JavaLogger [main] Previously run:               0
+2024-06-08 23:14:07,035 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-06-08 23:14:07,035 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-06-08 23:14:07,036 INFO l.l.c.JavaLogger [main] Total change sets:            2
+2024-06-08 23:14:07,036 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-06-08 23:14:07,039 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-06-08 23:14:07,040 INFO l.l.c.JavaLogger [main] Liquibase: Update has been successful. Rows affected: 2
+2024-06-08 23:14:07,042 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-06-08 23:14:07,044 INFO l.l.c.JavaLogger [main] Command execution complete
+2024-06-08 23:14:07,277 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-08 23:14:07,362 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-08 23:14:07,412 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-08 23:14:07,581 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-08 23:14:08,671 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-08 23:14:08,676 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 23:14:09,128 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-08 23:14:09,292 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 024cc315-f538-4155-b767-d41621b808d1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-08 23:14:09,328 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-06-08 23:14:10,362 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2024-06-08 23:14:10,922 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14a82ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2655ccbd, org.springframework.security.web.context.SecurityContextHolderFilter@7da324d0, org.springframework.security.web.header.HeaderWriterFilter@235babaf, org.springframework.web.filter.CorsFilter@62d42eb7, org.springframework.security.web.authentication.logout.LogoutFilter@2a19eaf0, com.example.movie.fav.filter.JwtAuthenticationFilter@22f0d1e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3413a3a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ece1800, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77784a86, org.springframework.security.web.access.ExceptionTranslationFilter@5316255e, org.springframework.security.web.access.intercept.AuthorizationFilter@b1caa00]
+2024-06-08 23:14:13,341 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-08 23:14:14,252 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-06-08 23:14:14,253 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2024-06-08 23:14:14,258 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 3 ms
+2024-06-08 23:14:14,367 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2024-06-08 23:14:14,517 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-08 23:14:14,717 INFO o.s.b.StartupInfoLogger [main] Started FavoriteMovieControllerTest in 13.767 seconds (process running for 14.878)
+2024-06-08 23:14:15,001 INFO o.s.c.o.FeignClientFactoryBean [main] For 'MOVIEREPOSITORY' URL not provided. Will try picking an instance via load-balancing.
+2024-06-08 23:14:15,448 WARN o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning [main] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-06-08 23:14:15,657 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 23:14:15,660 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-08 23:14:15,664 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-10 23:24:00,009 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-06-10 23:24:00,085 INFO o.s.b.StartupInfoLogger [main] Starting FavoriteMovieControllerTest using Java 21.0.3 with PID 21052 (started by chaman.jain in D:\study\impetus certificate\project\movie.fav)
+2024-06-10 23:24:00,089 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2024-06-10 23:24:03,081 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-10 23:24:03,359 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 258 ms. Found 1 JPA repository interface.
+2024-06-10 23:24:04,188 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=0914fcb1-7cf4-3047-bbd8-399c990e9ac0
+2024-06-10 23:24:06,729 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-10 23:24:06,745 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-10 23:24:07,242 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-10 23:24:07,647 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-06-10 23:24:07,651 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-10 23:24:07,820 INFO l.l.c.JavaLogger [main] Set default schema name to PUBLIC
+2024-06-10 23:24:08,955 INFO l.l.c.JavaLogger [main] Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-10 23:24:09,199 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-10 23:24:09,373 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-06-10 23:24:09,376 INFO l.l.c.JavaLogger [main] Using deploymentId: 8042049375
+2024-06-10 23:24:09,380 INFO l.l.c.JavaLogger [main] Reading from PUBLIC.DATABASECHANGELOG
+2024-06-10 23:24:09,412 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-1::chama (generated)
+2024-06-10 23:24:09,423 INFO l.l.c.JavaLogger [main] Sequence fav_movie_seq created
+2024-06-10 23:24:09,426 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-1::chama (generated) ran successfully in 12ms
+2024-06-10 23:24:09,450 INFO l.l.c.JavaLogger [main] Running Changeset: db/changelog/01.xml::1716710112005-4::chama (generated)
+2024-06-10 23:24:09,458 INFO l.l.c.JavaLogger [main] Table favorite_movie created
+2024-06-10 23:24:09,460 INFO l.l.c.JavaLogger [main] ChangeSet db/changelog/01.xml::1716710112005-4::chama (generated) ran successfully in 9ms
+2024-06-10 23:24:09,478 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-06-10 23:24:09,479 INFO l.l.c.JavaLogger [main] Run:                          2
+2024-06-10 23:24:09,480 INFO l.l.c.JavaLogger [main] Previously run:               0
+2024-06-10 23:24:09,481 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-06-10 23:24:09,482 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-06-10 23:24:09,483 INFO l.l.c.JavaLogger [main] Total change sets:            2
+2024-06-10 23:24:09,486 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-06-10 23:24:09,493 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-06-10 23:24:09,494 INFO l.l.c.JavaLogger [main] Liquibase: Update has been successful. Rows affected: 2
+2024-06-10 23:24:09,498 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-06-10 23:24:09,500 INFO l.l.c.JavaLogger [main] Command execution complete
+2024-06-10 23:24:09,868 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-10 23:24:10,036 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-10 23:24:10,117 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-10 23:24:10,341 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-10 23:24:10,447 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-10 23:24:11,638 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-10 23:24:11,644 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-10 23:24:12,366 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-10 23:24:12,640 WARN o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: c9450bbf-1622-44da-a2a7-3b8345207bba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-06-10 23:24:12,709 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-06-10 23:24:14,152 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2024-06-10 23:24:14,781 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4037fcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8aa77a4, org.springframework.security.web.context.SecurityContextHolderFilter@5a7810e1, org.springframework.security.web.header.HeaderWriterFilter@152225dd, org.springframework.web.filter.CorsFilter@6d81522b, org.springframework.security.web.authentication.logout.LogoutFilter@6236d83a, com.example.movie.fav.filter.JwtAuthenticationFilter@599e81bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@221416eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73cf33bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@467c785d, org.springframework.security.web.access.ExceptionTranslationFilter@49c819c7, org.springframework.security.web.access.intercept.AuthorizationFilter@6ce45045]
+2024-06-10 23:24:18,024 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-10 23:24:19,264 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-06-10 23:24:19,266 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2024-06-10 23:24:19,272 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 6 ms
+2024-06-10 23:24:19,405 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2024-06-10 23:24:19,612 WARN o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-10 23:24:19,822 INFO o.s.b.StartupInfoLogger [main] Started FavoriteMovieControllerTest in 20.557 seconds (process running for 22.557)
+2024-06-10 23:24:20,232 INFO o.s.c.o.FeignClientFactoryBean [main] For 'MOVIEREPOSITORY' URL not provided. Will try picking an instance via load-balancing.
+2024-06-10 23:24:20,913 WARN o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$PlainPageSerializationWarning [main] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-06-10 23:24:21,129 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-10 23:24:21,132 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-10 23:24:21,140 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
